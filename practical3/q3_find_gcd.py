@@ -1,8 +1,7 @@
-n1 = int(input("1st integer: "))
-n2 = int(input("2nd integer: "))
+def gcd(m, n):
+    while n:
+        m, n = n, m%n
+    return m
 
-d = min(n1, n2)
-
-while d!= 0:
-    if n1 % d == 0 and n2 % d == 0:
-        print(d)
+print(gcd(24,16))
+print(gcd(255,25))
